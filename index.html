@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="en" data-critters-container>
+
+<head>
+  <meta charset="utf-8">
+  <title>Booseog</title>
+  <base href="/dem-ngay-iu-cung">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Allura';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/allura/v21/9oRPNYsQpS4zjuA_hAgWHNn7GfHC.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Allura';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/allura/v21/9oRPNYsQpS4zjuA_hQgWHNn7GfHC.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Allura';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/allura/v21/9oRPNYsQpS4zjuA_iwgWHNn7GQ.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style type="text/css">
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVadyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVYNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVZdyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVaNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVZ9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVa9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVatyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjThZVZNyBx2pqPA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr6DRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr4TRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr5DRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr6TRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr5jRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr6jRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr6zRASf6M7VBj.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0IIpQlx3QUlC5A4PNr5TRASf6M7Q.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVadyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVYNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVZdyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVaNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVZ9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVa9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVatyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjFhdVZNyBx2pqPA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVadyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVYNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVZdyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVaNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVZ9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVa9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVatyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjOhBVZNyBx2pqPA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVadyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVYNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVZdyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVaNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVZ9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVa9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVatyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjXhFVZNyBx2pqPA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVadyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVYNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVZdyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVaNyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+1F00-1FFF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVZ9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0370-03FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVa9yBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVatyBx2pqPIif.woff2) format('woff2');
+      unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 800;
+      font-display: swap;
+      src: url(https://fonts.gstatic.com/s/notosans/v32/o-0NIpQlx3QUlC5A4PNjQhJVZNyBx2pqPA.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+  </style>
+  <link rel="preload" as="image" href="/dem-ngay-iu-cung/assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="/dem-ngay-iu-cung/assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="/dem-ngay-iu-cung/assets/images/pattern-3.svg">
+  <link rel="shortcut icon" href="/dem-ngay-iu-cung/2034760.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <style>
+    :root {
+      --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+      --bg-carolina-blue: hsla(199, 89%, 49%, 1);
+      --bg-maximum-green: #648E37;
+      --bg-oxford-blue: hsla(222, 44%, 13%, 1);
+      --bg-chinese-black: #0f1b11;
+      --text-white: hsla(0, 0%, 100%, 1);
+      --text-alice-blue: hsla(216, 100%, 95%, 1);
+      --text-columbia-blue: hsla(199, 69%, 84%, 1);
+      --text-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+      --text-carolina-blue: hsla(199, 89%, 49%, 1);
+      --text-shadow-blue: hsla(217, 24%, 59%, 1);
+      --text-slate-gray: hsla(217, 17%, 48%, 1);
+      --gradient-1: linear-gradient(90deg, #648E37, #fffd7285 51%);
+      --gradient-2: linear-gradient(90deg, #648E37, #fffd7285 51%, #7FA35C);
+      --gradient-3: linear-gradient(0deg, #000d1a, transparent);
+      --border-wild-blue-yonder: hsla(216, 33%, 68%, 1);
+      --border-prussian-blue: hsla(216, 33%, 20%, 1);
+      --border-white: hsl(0, 0%, 100%);
+      --border-white-alpha-15: hsla(0, 0%, 100%, .15);
+      --white: hsl(0, 0%, 100%, 1);
+      --black: hsl(0, 0%, 0%, 1);
+      --fontFamily-noto_sans: "Noto Sans", sans-serif;
+      --fontSize-1: 2.9rem;
+      --fontSize-2: 2rem;
+      --fontSize-3: 1.8rem;
+      --fontSize-4: 1.6rem;
+      --fontSize-5: 1.5rem;
+      --fontSize-6: 1.4rem;
+      --fontSize-7: 1.2rem;
+      --fontSize-8: 1.3rem;
+      --weight-medium: 500;
+      --weight-semiBold: 600;
+      --weight-bold: 700;
+      --weight-extraBold: 800;
+      --lineHeight-1: 1.3;
+      --lineHeight-2: 1.5;
+      --lineHeight-4: 1.5;
+      --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, .05);
+      --shadow-2: 0px 3px 20px hsla(180, 90%, 43%, .2);
+      --radius-6: 6px;
+      --radius-8: 8px;
+      --radius-16: 16px;
+      --radius-48: 48px;
+      --radius-circle: 50%;
+      --radius-pill: 200px;
+      --section-padding: 70px;
+      --transition-1: .25s ease;
+      --transition-2: .5s ease;
+      --cubic-in: cubic-bezier(.51, .03, .64, .28);
+      --cubic-out: cubic-bezier(.05, .83, .52, .97)
+    }
+
+    *,
+    *:before,
+    *:after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box
+    }
+
+    html {
+      font-size: 10px;
+      scroll-behavior: smooth
+    }
+
+    body {
+      background-color: var(--bg-chinese-black);
+      color: var(--text-shadow-blue);
+      font-family: var(--fontFamily-noto_sans);
+      font-size: 1.6rem;
+      line-height: var(--lineHeight-4);
+      overflow-y: overlay
+    }
+  </style>
+  <link rel="stylesheet" href="/dem-ngay-iu-cung/styles.3fe85366172373c1.css" media="print" onload="this.media='all'"><noscript>
+    <link rel="stylesheet" href="/dem-ngay-iu-cung/styles.3fe85366172373c1.css">
+  </noscript>
+</head>
+
+
+
+<body id="top">
+  <app-root></app-root>
+  <script src="/dem-ngay-iu-cung/runtime.1c35b4e02f215be3.js" type="module"></script>
+  <script src="/dem-ngay-iu-cung/polyfills.0f517b620d724ebf.js" type="module"></script>
+  <script src="/dem-ngay-iu-cung/main.6aa5d3b17668a185.js" type="module"></script>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</html>
